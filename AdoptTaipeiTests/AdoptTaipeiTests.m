@@ -30,6 +30,7 @@
     NSArray *animals = [MTLJSONAdapter modelsOfClass:[ATAnimal class] fromJSONArray:results error:&e];
     XCTAssertNil(e);
     XCTAssertNotNil(animals);
+    NSLog(@"%@", animals[0]);
 }
 
 @end

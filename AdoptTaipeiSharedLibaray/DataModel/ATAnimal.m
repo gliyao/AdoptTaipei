@@ -8,6 +8,8 @@
 
 #import "ATAnimal.h"
 
+#import "MTLValueTransformer.h"
+
 @implementation ATAnimal
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
@@ -35,5 +37,33 @@
              @"imageUrl":@"ImageName",
          };
 }
+
++ (NSValueTransformer *)typeJSONTransformer
+{
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *value, BOOL *success, NSError **error) {
+        if([value isEqualToString:@"犬"]){
+            return @(ATAnimalTypeDog);
+        }
+        if([value isEqualToString:@"貓"]){
+            return @(ATAnimalTypeCat);
+        }
+        return @(ATAnimalTypeOther);
+    }];
+};
+
++ (NSValueTransformer *)sexJSONTransformer
+{
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *value, BOOL *success, NSError **error) {
+        return @([value isEqualToString:@"雄"]);
+    }];
+};
+
++ (NSValueTransformer *)isSterilizationJSONTransformer
+{
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *value, BOOL *success, NSError **error) {
+        return @([value isEqualToString:@"已絕育"]);
+    }];
+};
+
 
 @end
