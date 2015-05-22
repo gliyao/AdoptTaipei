@@ -66,6 +66,9 @@
 		8A1FA5231B0F935B00FE4DEF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1FA5221B0F935B00FE4DEF /* libsqlite3.dylib */; };
 		8A1FA5251B0F938200FE4DEF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1FA5241B0F938200FE4DEF /* Accounts.framework */; };
 		8A1FA5271B0F938E00FE4DEF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1FA5261B0F938E00FE4DEF /* Social.framework */; };
+		8A1FA52B1B0F956800FE4DEF /* ATParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA52A1B0F956800FE4DEF /* ATParse.m */; };
+		8A1FA5321B0F978500FE4DEF /* devConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5301B0F978500FE4DEF /* devConfig.json */; };
+		8A1FA5331B0F978500FE4DEF /* ProConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5311B0F978500FE4DEF /* ProConfig.json */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
 		8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E7F1B0F666D0033FC2F /* Main.storyboard */; };
@@ -187,6 +190,10 @@
 		8A1FA5221B0F935B00FE4DEF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8A1FA5241B0F938200FE4DEF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		8A1FA5261B0F938E00FE4DEF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8A1FA5291B0F956800FE4DEF /* ATParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATParse.h; sourceTree = "<group>"; };
+		8A1FA52A1B0F956800FE4DEF /* ATParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATParse.m; sourceTree = "<group>"; };
+		8A1FA5301B0F978500FE4DEF /* devConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = devConfig.json; sourceTree = SOURCE_ROOT; };
+		8A1FA5311B0F978500FE4DEF /* ProConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProConfig.json; sourceTree = SOURCE_ROOT; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -370,6 +377,8 @@
 			children = (
 				8A1FA4F11B0F7A5200FE4DEF /* ATAnimal.h */,
 				8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */,
+				8A1FA5291B0F956800FE4DEF /* ATParse.h */,
+				8A1FA52A1B0F956800FE4DEF /* ATParse.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -471,6 +480,8 @@
 				8AB29E761B0F666D0033FC2F /* Info.plist */,
 				8AB29E771B0F666D0033FC2F /* main.m */,
 				8A1FA4E81B0F77A100FE4DEF /* AdoptTaipei-Prefix.pch */,
+				8A1FA5301B0F978500FE4DEF /* devConfig.json */,
+				8A1FA5311B0F978500FE4DEF /* ProConfig.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -576,8 +587,10 @@
 				8A1FA4FD1B0F851F00FE4DEF /* ATAnimalViewCell.xib in Resources */,
 				8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */,
 				8AB29E861B0F666D0033FC2F /* LaunchScreen.xib in Resources */,
+				8A1FA5321B0F978500FE4DEF /* devConfig.json in Resources */,
 				8AB29E831B0F666D0033FC2F /* Images.xcassets in Resources */,
 				8A1FA4F01B0F79FE00FE4DEF /* data.json in Resources */,
+				8A1FA5331B0F978500FE4DEF /* ProConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +647,7 @@
 				8A1FA4CE1B0F776200FE4DEF /* MTLValueTransformer.m in Sources */,
 				8A1FA4E61B0F776200FE4DEF /* UIImageView+WebCache.m in Sources */,
 				8A1FA4CD1B0F776200FE4DEF /* MTLTransformerErrorHandling.m in Sources */,
+				8A1FA52B1B0F956800FE4DEF /* ATParse.m in Sources */,
 				8A1FA4D01B0F776200FE4DEF /* NSDictionary+MTLJSONKeyPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

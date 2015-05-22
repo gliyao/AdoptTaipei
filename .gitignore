@@ -25,4 +25,7 @@ DerivedData
 #
 #Pods/
 
-config.json
+devConfig.json
+proConfig.json
+global.json
+main.js

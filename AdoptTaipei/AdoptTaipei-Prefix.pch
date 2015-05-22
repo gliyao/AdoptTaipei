@@ -7,4 +7,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "NSDictionary+JSON.h"
+    #import <Parse/Parse.h>
+
 #endif

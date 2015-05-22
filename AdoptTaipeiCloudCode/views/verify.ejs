@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnyPhone</title>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href='//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/anyphone.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h1>AnyPhone</h1>
+            <h4>Enter the 4-digit confirmation code:</h4>
+            <h5>It was sent in an SMS message to +1<% if(locals.phoneNumber !== undefined) { %><%= phoneNumber%><% } %></h5>
+            <% if(locals.warning !== undefined) { %><strong><%= warning %></strong><% } %>
+            <form method="post" action="/verify">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control btn-lg" tabindex="1" name="code" id="code" placeholder="1234">
+                  <input type="hidden" name="phoneNumber" id="phoneNumber" value="<% if(locals.phoneNumber !== undefined) { %><%= phoneNumber%><% } %>">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Verify</button>
+            </form>
+
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

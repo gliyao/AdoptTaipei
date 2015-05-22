@@ -11,6 +11,7 @@
 
 #import "NSDictionary+JSON.h"
 #import "ATAnimal.h"
+#import "ATParse.h"
 
 @interface AdoptTaipeiTests : XCTestCase
 
@@ -18,19 +19,31 @@
 
 @implementation AdoptTaipeiTests
 
-- (void)testExample
+- (void)testATAnimalInit
 {
     NSDictionary *dict = [NSDictionary dictionaryWithJSONFile:@"data"];
     NSDictionary *result = dict[@"result"];
     NSArray *results = result[@"results"];
     
     XCTAssertNotNil(results);
+
     NSError *e = nil;
-    
     NSArray *animals = [MTLJSONAdapter modelsOfClass:[ATAnimal class] fromJSONArray:results error:&e];
     XCTAssertNil(e);
     XCTAssertNotNil(animals);
     NSLog(@"%@", animals[0]);
+}
+
+- (void)testATParseInit
+{
+    NSDictionary *dict = [NSDictionary dictionaryWithJSONFile:@"devConfig"];
+    NSError *e = nil;
+    ATParse *parse = [[ATParse alloc] initWithDictionary:dict error:&e];
+    
+    XCTAssertNil(e);
+    XCTAssertNotNil(parse);
+    XCTAssertNotNil(parse.applicationId);
+    XCTAssertNotNil(parse.clientKey);
 }
 
 @end
