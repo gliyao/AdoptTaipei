@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ATAnimalListViewController.h
 //  AdoptTaipei
 //
 //  Created by Liyao on 2015/5/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ATAnimalListViewController : UIViewController
 
 @end
-

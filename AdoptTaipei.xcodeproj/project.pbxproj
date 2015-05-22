@@ -43,9 +43,11 @@
 		8A1FA4ED1B0F78F000FE4DEF /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4EC1B0F78F000FE4DEF /* NSDictionary+JSON.m */; };
 		8A1FA4F01B0F79FE00FE4DEF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA4EF1B0F79FE00FE4DEF /* data.json */; };
 		8A1FA4F31B0F7A5200FE4DEF /* ATAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */; };
+		8A1FA4F71B0F848F00FE4DEF /* ATAnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */; };
+		8A1FA4FC1B0F851F00FE4DEF /* ATAnimalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4FA1B0F851F00FE4DEF /* ATAnimalViewCell.m */; };
+		8A1FA4FD1B0F851F00FE4DEF /* ATAnimalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA4FB1B0F851F00FE4DEF /* ATAnimalViewCell.xib */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
-		8AB29E7E1B0F666D0033FC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7D1B0F666D0033FC2F /* ViewController.m */; };
 		8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E7F1B0F666D0033FC2F /* Main.storyboard */; };
 		8AB29E831B0F666D0033FC2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E821B0F666D0033FC2F /* Images.xcassets */; };
 		8AB29E861B0F666D0033FC2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E841B0F666D0033FC2F /* LaunchScreen.xib */; };
@@ -139,13 +141,16 @@
 		8A1FA4EF1B0F79FE00FE4DEF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		8A1FA4F11B0F7A5200FE4DEF /* ATAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimal.h; sourceTree = "<group>"; };
 		8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimal.m; sourceTree = "<group>"; };
+		8A1FA4F51B0F848F00FE4DEF /* ATAnimalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimalListViewController.h; sourceTree = "<group>"; };
+		8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimalListViewController.m; sourceTree = "<group>"; };
+		8A1FA4F91B0F851F00FE4DEF /* ATAnimalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimalViewCell.h; sourceTree = "<group>"; };
+		8A1FA4FA1B0F851F00FE4DEF /* ATAnimalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimalViewCell.m; sourceTree = "<group>"; };
+		8A1FA4FB1B0F851F00FE4DEF /* ATAnimalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATAnimalViewCell.xib; sourceTree = "<group>"; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8AB29E791B0F666D0033FC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8AB29E7C1B0F666D0033FC2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8AB29E7D1B0F666D0033FC2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8AB29E801B0F666D0033FC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AB29E821B0F666D0033FC2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8AB29E851B0F666D0033FC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -308,6 +313,25 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		8A1FA4F41B0F845700FE4DEF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA4F51B0F848F00FE4DEF /* ATAnimalListViewController.h */,
+				8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8A1FA4F81B0F84EB00FE4DEF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA4F91B0F851F00FE4DEF /* ATAnimalViewCell.h */,
+				8A1FA4FA1B0F851F00FE4DEF /* ATAnimalViewCell.m */,
+				8A1FA4FB1B0F851F00FE4DEF /* ATAnimalViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8AB29E691B0F666D0033FC2F = {
 			isa = PBXGroup;
 			children = (
@@ -331,10 +355,10 @@
 		8AB29E741B0F666D0033FC2F /* AdoptTaipei */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FA4F81B0F84EB00FE4DEF /* Cell */,
+				8A1FA4F41B0F845700FE4DEF /* ViewController */,
 				8AB29E791B0F666D0033FC2F /* AppDelegate.h */,
 				8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */,
-				8AB29E7C1B0F666D0033FC2F /* ViewController.h */,
-				8AB29E7D1B0F666D0033FC2F /* ViewController.m */,
 				8AB29E7F1B0F666D0033FC2F /* Main.storyboard */,
 				8AB29E821B0F666D0033FC2F /* Images.xcassets */,
 				8AB29E841B0F666D0033FC2F /* LaunchScreen.xib */,
@@ -452,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1FA4FD1B0F851F00FE4DEF /* ATAnimalViewCell.xib in Resources */,
 				8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */,
 				8AB29E861B0F666D0033FC2F /* LaunchScreen.xib in Resources */,
 				8AB29E831B0F666D0033FC2F /* Images.xcassets in Resources */,
@@ -488,13 +513,14 @@
 				8A1FA4F31B0F7A5200FE4DEF /* ATAnimal.m in Sources */,
 				8A1FA4CB1B0F776200FE4DEF /* MTLModel.m in Sources */,
 				8A1FA4ED1B0F78F000FE4DEF /* NSDictionary+JSON.m in Sources */,
-				8AB29E7E1B0F666D0033FC2F /* ViewController.m in Sources */,
 				8A1FA4D71B0F776200FE4DEF /* MBProgressHUD.m in Sources */,
+				8A1FA4FC1B0F851F00FE4DEF /* ATAnimalViewCell.m in Sources */,
 				8A1FA4E21B0F776200FE4DEF /* UIImage+GIF.m in Sources */,
 				8A1FA4E71B0F776200FE4DEF /* UIView+WebCacheOperation.m in Sources */,
 				8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */,
 				8A1FA4C71B0F776200FE4DEF /* EXTRuntimeExtensions.m in Sources */,
 				8A1FA4E31B0F776200FE4DEF /* UIImage+MultiFormat.m in Sources */,
+				8A1FA4F71B0F848F00FE4DEF /* ATAnimalListViewController.m in Sources */,
 				8A1FA4DC1B0F776200FE4DEF /* SDWebImageDecoder.m in Sources */,
 				8A1FA4D91B0F776200FE4DEF /* NSData+ImageContentType.m in Sources */,
 				8A1FA4D31B0F776200FE4DEF /* NSError+MTLModelException.m in Sources */,
