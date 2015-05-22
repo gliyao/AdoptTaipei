@@ -163,6 +163,7 @@
 		8AB29E6A1B0F666D0033FC2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AT;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Liyao;
 				TargetAttributes = {
@@ -418,6 +419,7 @@
 				8AB29E971B0F666D0033FC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AB29E981B0F666D0033FC2F /* Build configuration list for PBXNativeTarget "AdoptTaipeiTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +428,7 @@
 				8AB29E9A1B0F666D0033FC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
