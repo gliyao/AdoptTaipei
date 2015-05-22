@@ -40,6 +40,9 @@
 		8A1FA4E51B0F776200FE4DEF /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4C21B0F776200FE4DEF /* UIImageView+HighlightedWebCache.m */; };
 		8A1FA4E61B0F776200FE4DEF /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4C41B0F776200FE4DEF /* UIImageView+WebCache.m */; };
 		8A1FA4E71B0F776200FE4DEF /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4C61B0F776200FE4DEF /* UIView+WebCacheOperation.m */; };
+		8A1FA4ED1B0F78F000FE4DEF /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4EC1B0F78F000FE4DEF /* NSDictionary+JSON.m */; };
+		8A1FA4F01B0F79FE00FE4DEF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA4EF1B0F79FE00FE4DEF /* data.json */; };
+		8A1FA4F31B0F7A5200FE4DEF /* ATAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
 		8AB29E7E1B0F666D0033FC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7D1B0F666D0033FC2F /* ViewController.m */; };
@@ -130,6 +133,12 @@
 		8A1FA4C41B0F776200FE4DEF /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		8A1FA4C51B0F776200FE4DEF /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		8A1FA4C61B0F776200FE4DEF /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		8A1FA4E81B0F77A100FE4DEF /* AdoptTaipei-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdoptTaipei-Prefix.pch"; sourceTree = "<group>"; };
+		8A1FA4EB1B0F78F000FE4DEF /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		8A1FA4EC1B0F78F000FE4DEF /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		8A1FA4EF1B0F79FE00FE4DEF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		8A1FA4F11B0F7A5200FE4DEF /* ATAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimal.h; sourceTree = "<group>"; };
+		8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimal.m; sourceTree = "<group>"; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -272,13 +281,41 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		8A1FA4E91B0F78F000FE4DEF /* AdoptTaipeiSharedLibaray */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA4EE1B0F790500FE4DEF /* DataModel */,
+				8A1FA4EA1B0F78F000FE4DEF /* Extensions */,
+			);
+			path = AdoptTaipeiSharedLibaray;
+			sourceTree = "<group>";
+		};
+		8A1FA4EA1B0F78F000FE4DEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA4EB1B0F78F000FE4DEF /* NSDictionary+JSON.h */,
+				8A1FA4EC1B0F78F000FE4DEF /* NSDictionary+JSON.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A1FA4EE1B0F790500FE4DEF /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA4F11B0F7A5200FE4DEF /* ATAnimal.h */,
+				8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		8AB29E691B0F666D0033FC2F = {
 			isa = PBXGroup;
 			children = (
-				8A1FA4111B0F754300FE4DEF /* Vendor */,
+				8A1FA4E91B0F78F000FE4DEF /* AdoptTaipeiSharedLibaray */,
 				8AB29E741B0F666D0033FC2F /* AdoptTaipei */,
 				8AB29E8E1B0F666D0033FC2F /* AdoptTaipeiTests */,
 				8AB29E731B0F666D0033FC2F /* Products */,
+				8A1FA4111B0F754300FE4DEF /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -309,8 +346,10 @@
 		8AB29E751B0F666D0033FC2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FA4EF1B0F79FE00FE4DEF /* data.json */,
 				8AB29E761B0F666D0033FC2F /* Info.plist */,
 				8AB29E771B0F666D0033FC2F /* main.m */,
+				8A1FA4E81B0F77A100FE4DEF /* AdoptTaipei-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -416,6 +455,7 @@
 				8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */,
 				8AB29E861B0F666D0033FC2F /* LaunchScreen.xib in Resources */,
 				8AB29E831B0F666D0033FC2F /* Images.xcassets in Resources */,
+				8A1FA4F01B0F79FE00FE4DEF /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +485,9 @@
 				8A1FA4CA1B0F776200FE4DEF /* MTLModel+NSCoding.m in Sources */,
 				8A1FA4CC1B0F776200FE4DEF /* MTLReflection.m in Sources */,
 				8A1FA4E41B0F776200FE4DEF /* UIImage+WebP.m in Sources */,
+				8A1FA4F31B0F7A5200FE4DEF /* ATAnimal.m in Sources */,
 				8A1FA4CB1B0F776200FE4DEF /* MTLModel.m in Sources */,
+				8A1FA4ED1B0F78F000FE4DEF /* NSDictionary+JSON.m in Sources */,
 				8AB29E7E1B0F666D0033FC2F /* ViewController.m in Sources */,
 				8A1FA4D71B0F776200FE4DEF /* MBProgressHUD.m in Sources */,
 				8A1FA4E21B0F776200FE4DEF /* UIImage+GIF.m in Sources */,
@@ -596,8 +638,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "AdoptTaipei/AdoptTaipei-Prefix.pch";
 				INFOPLIST_FILE = AdoptTaipei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/Mantle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -606,8 +650,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "AdoptTaipei/AdoptTaipei-Prefix.pch";
 				INFOPLIST_FILE = AdoptTaipei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/Mantle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
