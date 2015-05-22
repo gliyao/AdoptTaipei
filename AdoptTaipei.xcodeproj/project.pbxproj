@@ -46,6 +46,7 @@
 		8A1FA4F71B0F848F00FE4DEF /* ATAnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */; };
 		8A1FA4FC1B0F851F00FE4DEF /* ATAnimalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4FA1B0F851F00FE4DEF /* ATAnimalViewCell.m */; };
 		8A1FA4FD1B0F851F00FE4DEF /* ATAnimalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA4FB1B0F851F00FE4DEF /* ATAnimalViewCell.xib */; };
+		8A1FA5001B0F8E0400FE4DEF /* ATAnimalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA4FF1B0F8E0400FE4DEF /* ATAnimalDetailViewController.m */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
 		8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E7F1B0F666D0033FC2F /* Main.storyboard */; };
@@ -146,6 +147,8 @@
 		8A1FA4F91B0F851F00FE4DEF /* ATAnimalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimalViewCell.h; sourceTree = "<group>"; };
 		8A1FA4FA1B0F851F00FE4DEF /* ATAnimalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimalViewCell.m; sourceTree = "<group>"; };
 		8A1FA4FB1B0F851F00FE4DEF /* ATAnimalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATAnimalViewCell.xib; sourceTree = "<group>"; };
+		8A1FA4FE1B0F8E0400FE4DEF /* ATAnimalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAnimalDetailViewController.h; sourceTree = "<group>"; };
+		8A1FA4FF1B0F8E0400FE4DEF /* ATAnimalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAnimalDetailViewController.m; sourceTree = "<group>"; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 			children = (
 				8A1FA4F51B0F848F00FE4DEF /* ATAnimalListViewController.h */,
 				8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */,
+				8A1FA4FE1B0F8E0400FE4DEF /* ATAnimalDetailViewController.h */,
+				8A1FA4FF1B0F8E0400FE4DEF /* ATAnimalDetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 			files = (
 				8A1FA4E51B0F776200FE4DEF /* UIImageView+HighlightedWebCache.m in Sources */,
 				8A1FA4C81B0F776200FE4DEF /* EXTScope.m in Sources */,
+				8A1FA5001B0F8E0400FE4DEF /* ATAnimalDetailViewController.m in Sources */,
 				8A1FA4DF1B0F776200FE4DEF /* SDWebImageManager.m in Sources */,
 				8A1FA4DB1B0F776200FE4DEF /* SDWebImageCompat.m in Sources */,
 				8A1FA4E01B0F776200FE4DEF /* SDWebImagePrefetcher.m in Sources */,

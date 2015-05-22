@@ -11,6 +11,7 @@
 #import "NSDictionary+JSON.h"
 #import "ATAnimal.h"
 #import "UIImageView+WebCache.h"
+#import "ATAnimalDetailViewController.h"
 
 @interface ATAnimalListViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) NSArray *animals;
@@ -78,10 +79,8 @@ static NSString * const kATAnimalViewCell = @"ATAnimalViewCell";
 #pragma mark <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    TSItemDetailModel *item = [self _itemAtIndexPath:indexPath];
-//    if(self.delegate && [_delegate respondsToSelector:@selector(itemListViewController:didSelectItem:)]){
-//        [self.delegate itemListViewController:self didSelectItem:item];
-//    }
+    ATAnimal *animal = [self _animaltIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"openDetailVC" sender:animal];
 }
 
 #pragma mark - Private methods
@@ -89,6 +88,15 @@ static NSString * const kATAnimalViewCell = @"ATAnimalViewCell";
 {
     //TODO: protect range when access array
     return self.animals[indexPath.row];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"openDetailVC"]){
+        ATAnimalDetailViewController *mvc = segue.destinationViewController;
+        mvc.animal = sender;
+    }
 }
 
 @end

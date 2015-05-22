@@ -61,11 +61,53 @@
                     <navigationItem key="navigationItem" title="尋找幸福" id="TOG-Xc-Ba7"/>
                     <connections>
                         <outlet property="collectionView" destination="Sp0-U7-dGW" id="Qz3-Tx-0tF"/>
+                        <segue destination="t9r-gM-WYv" kind="show" identifier="openDetailVC" id="yEA-kR-oV1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Av-Lu-Evl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1139" y="501"/>
+        </scene>
+        <!--動物Detail-->
+        <scene sceneID="O1c-YZ-DwQ">
+            <objects>
+                <viewController id="t9r-gM-WYv" customClass="ATAnimalDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bqu-3T-3Pq"/>
+                        <viewControllerLayoutGuide type="bottom" id="695-xx-Jn3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJk-iP-HfP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="341-Ve-vfg">
+                                <rect key="frame" x="-35" y="36" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="z3p-vX-KxK"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-Iq-eNe">
+                                <rect key="frame" x="16" y="80" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="341-Ve-vfg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="動物Detail" id="3Cd-6O-FvF"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Xnh-Iq-eNe" id="kVW-6R-V9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAB-dP-jd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="509"/>
         </scene>
     </scenes>
 </document>

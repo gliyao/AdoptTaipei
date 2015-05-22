@@ -10,8 +10,11 @@
 
 @implementation ATAnimalViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.contentView.layer.cornerRadius = 2;
+    self.contentView.layer.masksToBounds = YES;
 }
 
 @end
