@@ -29,10 +29,10 @@
              @"resettlement":@"Resettlement",
              @"phone":@"Phone",
              @"email":@"Email",
-             @"childreAnlong":@"ChildreAnlong",
-             @"animalAnlong":@"AnimalAnlong",
-             @"bodyweight":@"Bodyweight",
-             @"imageName":@"ImageName",
+             @"canChildreAnlong":@"ChildreAnlong",
+             @"canAnimalAnlong":@"AnimalAnlong",
+             @"wieght":@"Bodyweight",
+             @"imageUrl":@"ImageName",
          };
 }
 
