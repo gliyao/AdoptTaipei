@@ -95,7 +95,7 @@ static NSString * const kProConfig = @"proConfig";
 {
 //    [PFPush handlePush:userInfo];
     NSLog(@"%@", userInfo);
-    NSDictionary *aps = userInfo[@"aps"];g
+    NSDictionary *aps = userInfo[@"aps"];
     NSDictionary *alert = aps[@"alert"];
     
     NSString *imageURL = alert[@"image"];
