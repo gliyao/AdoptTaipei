@@ -52,7 +52,7 @@ static CGFloat const kNaviBarHeight = 64;
 {
     [super loadView];
     
-    self.title = @"Tinder";
+    self.title = @"Choose";
     CGRect screenBounds = [UIScreen mainScreen].bounds;
     self.cardFrame = CGRectMake(kPadding, kNaviBarHeight + kPadding, CGRectGetWidth(screenBounds) - k2Padding, CGRectGetWidth(screenBounds) - k2Padding);
 }
