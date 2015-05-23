@@ -27,18 +27,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-zI-hIO" userLabel="bottomView">
                     <rect key="frame" x="0.0" y="600" width="600" height="231"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT4-Z6-NAn">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT4-Z6-NAn">
                             <rect key="frame" x="300" y="0.0" width="300" height="231"/>
-                            <state key="normal" title="YES">
+                            <state key="normal" image="oo">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="yesAction:" destination="-1" eventType="touchUpInside" id="KNd-zS-Z9T"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-vl-09D">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-vl-09D">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="231"/>
-                            <state key="normal" title="NO">
+                            <state key="normal" image="xx">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -73,4 +73,8 @@
             <point key="canvasLocation" x="620" y="508.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="oo" width="68" height="68"/>
+        <image name="xx" width="68" height="68"/>
+    </resources>
 </document>
