@@ -12,4 +12,6 @@
 + (NSString *)parseClassName;
 @property (retain) NSString *userId;
 @property (retain) NSString *animalId;
+
++ (void)likeAnimalInBackgroud:(NSString *)animalId;
 @end

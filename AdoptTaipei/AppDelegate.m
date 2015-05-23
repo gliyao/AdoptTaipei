@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ATParse.h"
+#import "ATAnimal.h"
 
 static NSString * const kDevConfig = @"devConfig";
 static NSString * const kProConfig = @"proConfig";
@@ -38,11 +39,7 @@ static NSString * const kProConfig = @"proConfig";
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
-    
-    // Initialize Parse.
     [Parse setApplicationId:parse.applicationId clientKey:parse.clientKey];
-    
-    // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     

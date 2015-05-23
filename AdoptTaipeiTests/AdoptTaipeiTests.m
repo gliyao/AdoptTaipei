@@ -12,6 +12,7 @@
 #import "NSDictionary+JSON.h"
 #import "ATAnimal.h"
 #import "ATParse.h"
+#import "ATLike.h"
 
 @interface AdoptTaipeiTests : XCTestCase
 
@@ -44,6 +45,25 @@
     XCTAssertNotNil(parse);
     XCTAssertNotNil(parse.applicationId);
     XCTAssertNotNil(parse.clientKey);
+}
+
+- (void)testATLikeInit
+{
+    ATLike *like = [ATLike object];
+    like.userId = @"TestId";
+    like.animalId = @"ABC";
+
+    XCTestExpectation *exp = [self expectationWithDescription:@"API timeout"];
+    [like saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Saved.");
+        } else {
+            NSLog(@"%@", error);
+        }
+        [exp fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:10 handler:nil];
 }
 
 @end

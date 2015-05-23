@@ -12,9 +12,22 @@
 @dynamic userId;
 @dynamic animalId;
 
++ (void)load
+{
+    [self registerSubclass];
+}
+
 + (NSString *)parseClassName
 {
     return NSStringFromClass([self class]);
+}
+
++ (void)likeAnimalInBackgroud:(NSString *)animalId
+{
+    ATLike *like = [ATLike object];
+    like.animalId = animalId;
+    like.userId = [PFUser currentUser].objectId;
+    [like saveInBackground];
 }
 
 @end

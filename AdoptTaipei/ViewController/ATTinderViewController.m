@@ -11,16 +11,19 @@
 #import "ATAnimal.h"
 #import "UIImage+WebP.h"
 #import "UIImageView+WebCache.h"
+#import "ATLike.h"
 
 static CGFloat const kPadding = 8;
 static CGFloat const k2Padding = 16;
 static CGFloat const kNaviBarHeight = 64;
 
 @interface ATTinderViewController () <MDCSwipeToChooseDelegate>
+@property (strong, nonatomic) ATAnimal *animal;
 @property (strong, nonatomic) MDCSwipeToChooseView *cardView;
 @property (assign, nonatomic) CGRect cardFrame;
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (strong, nonatomic) NSMutableArray *likes;
 @end
 
 @implementation ATTinderViewController
@@ -40,6 +43,7 @@ static CGFloat const kNaviBarHeight = 64;
         
         self.animals = [MTLJSONAdapter modelsOfClass:[ATAnimal class] fromJSONArray:results error:&e];
         //TODO: random animal
+        self.likes = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -64,6 +68,7 @@ static CGFloat const kNaviBarHeight = 64;
     int r = arc4random_uniform((int)self.animals.count);
     ATAnimal *animal = self.animals[r];
     [self _newCardWithAnimal:animal];
+    self.animal = animal;
 }
 
 - (void)_newCardWithAnimal:(ATAnimal *)animal
@@ -102,9 +107,10 @@ static CGFloat const kNaviBarHeight = 64;
 - (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction
 {
     if (direction == MDCSwipeDirectionLeft) {
-        NSLog(@"Photo deleted!");
+        NSLog(@"NO");
     } else {
-        NSLog(@"Photo saved!");
+        NSLog(@"YES");
+        [ATLike likeAnimalInBackgroud:self.animal.Id];
     }
     [self _nextCard];
 }
