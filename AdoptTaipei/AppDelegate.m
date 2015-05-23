@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ATParse.h"
 #import "ATAnimal.h"
+#import "ATHelloViewController.h"
 
 static NSString * const kDevConfig = @"devConfig";
 static NSString * const kProConfig = @"proConfig";
@@ -92,8 +93,17 @@ static NSString * const kProConfig = @"proConfig";
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
-    [PFPush handlePush:userInfo];
+//    [PFPush handlePush:userInfo];
+    NSLog(@"%@", userInfo);
+    NSDictionary *alert = userInfo[@"aps"][@"alert"];
+    NSString *imageURL = alert[@"image"];
+    NSString *words = alert[@"body"];
+    
+    ATHelloViewController *mvc = [[ATHelloViewController alloc] init];
+    mvc.words = words;
+    mvc.imageURL = imageURL;
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mvc];
+    [self.rootViewController presentViewController:nvc animated:YES completion:nil];
 }
-
 
 @end
