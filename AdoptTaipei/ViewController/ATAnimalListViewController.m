@@ -27,8 +27,7 @@ static NSString * const kATAnimalViewCell = @"ATAnimalViewCell";
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
+    [super viewDidLoad];g
     NSDictionary *dict = [NSDictionary dictionaryWithJSONFile:@"data"];
     NSDictionary *result = dict[@"result"];
     NSArray *results = result[@"results"];
