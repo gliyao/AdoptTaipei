@@ -14,6 +14,8 @@
 static NSString * const kDevConfig = @"devConfig";
 static NSString * const kProConfig = @"proConfig";
 
+static NSString * const kAPNSKey = @"APNSKey";
+
 @interface AppDelegate ()
 
 @property (strong, nonatomic) UINavigationController *rootViewController;
@@ -65,8 +67,18 @@ static NSString * const kProConfig = @"proConfig";
         [self _registAPNS];
     }
     
+    // Handle notification when app is quit
+    NSDictionary *notification = [launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+    if (notification != nil) {
+        [self handlePush:notification];
+    }
     
     return YES;
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)_registAPNS
@@ -94,16 +106,22 @@ static NSString * const kProConfig = @"proConfig";
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
 //    [PFPush handlePush:userInfo];
-    NSLog(@"%@", userInfo);
+    [self handlePush:userInfo];
+}
+
+- (void)handlePush:(NSDictionary *)userInfo
+{
     NSDictionary *aps = userInfo[@"aps"];
     NSDictionary *alert = aps[@"alert"];
     
     NSString *imageURL = alert[@"image"];
     NSString *words = alert[@"body"];
     
+    
     ATHelloViewController *mvc = [[ATHelloViewController alloc] init];
     mvc.words = words;
     mvc.imageURL = imageURL;
+    
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mvc];
     [self.rootViewController presentViewController:nvc animated:YES completion:nil];
 }

@@ -15,7 +15,6 @@
 #import "ATTinderViewController.h"
 #import "ATHelloViewController.h"
 
-
 @interface ATAnimalListViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) NSArray *animals;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -108,6 +107,5 @@ static NSString * const kATAnimalViewCell = @"ATAnimalViewCell";
     ATTinderViewController *mvc = [[ATTinderViewController alloc] init];
     [self.navigationController pushViewController:mvc animated:YES];
 }
-
 
 @end
