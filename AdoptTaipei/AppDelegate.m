@@ -95,7 +95,21 @@ static NSString * const kProConfig = @"proConfig";
 {
 //    [PFPush handlePush:userInfo];
     NSLog(@"%@", userInfo);
-    NSDictionary *alert = userInfo[@"aps"][@"alert"];
+    
+    if([userInfo objectForKey:@"aps"] == nil){
+        return;
+    }
+    NSDictionary *aps = [userInfo objectForKey:@"aps"];
+    
+    if([aps objectForKey:@"alert"] == nil){
+        return;
+    }
+    NSDictionary *alert = aps[@"alert"];
+
+    if([aps objectForKey:@"image"] == nil || [aps objectForKey:@"body"] == nil) {
+        return;
+    }
+    
     NSString *imageURL = alert[@"image"];
     NSString *words = alert[@"body"];
     
