@@ -69,6 +69,18 @@
 		8A1FA52B1B0F956800FE4DEF /* ATParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA52A1B0F956800FE4DEF /* ATParse.m */; };
 		8A1FA5321B0F978500FE4DEF /* devConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5301B0F978500FE4DEF /* devConfig.json */; };
 		8A1FA5331B0F978500FE4DEF /* ProConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5311B0F978500FE4DEF /* ProConfig.json */; };
+		8A1FA5361B1006E600FE4DEF /* ATTinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5351B1006E600FE4DEF /* ATTinderViewController.m */; };
+		8A1FA5571B10074100FE4DEF /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA53A1B10074100FE4DEF /* MDCGeometry.m */; };
+		8A1FA5581B10074100FE4DEF /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA53D1B10074100FE4DEF /* MDCViewState.m */; };
+		8A1FA5591B10074100FE4DEF /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA53F1B10074100FE4DEF /* UIColor+MDCRGB8Bit.m */; };
+		8A1FA55A1B10074100FE4DEF /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5421B10074100FE4DEF /* UIView+MDCBorderedLabel.m */; };
+		8A1FA55B1B10074100FE4DEF /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5481B10074100FE4DEF /* MDCSwipeOptions.m */; };
+		8A1FA55C1B10074100FE4DEF /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA54A1B10074100FE4DEF /* MDCSwipeToChooseViewOptions.m */; };
+		8A1FA55D1B10074100FE4DEF /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA54D1B10074100FE4DEF /* MDCPanState.m */; };
+		8A1FA55E1B10074100FE4DEF /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5501B10074100FE4DEF /* MDCSwipeResult.m */; };
+		8A1FA55F1B10074100FE4DEF /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5541B10074100FE4DEF /* MDCSwipeToChooseView.m */; };
+		8A1FA5601B10074100FE4DEF /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5561B10074100FE4DEF /* UIView+MDCSwipeToChoose.m */; };
+		8A1FA5621B10082300FE4DEF /* ATTinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5611B10082300FE4DEF /* ATTinderViewController.xib */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
 		8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E7F1B0F666D0033FC2F /* Main.storyboard */; };
@@ -194,6 +206,33 @@
 		8A1FA52A1B0F956800FE4DEF /* ATParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATParse.m; sourceTree = "<group>"; };
 		8A1FA5301B0F978500FE4DEF /* devConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = devConfig.json; sourceTree = SOURCE_ROOT; };
 		8A1FA5311B0F978500FE4DEF /* ProConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProConfig.json; sourceTree = SOURCE_ROOT; };
+		8A1FA5341B1006E600FE4DEF /* ATTinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTinderViewController.h; sourceTree = "<group>"; };
+		8A1FA5351B1006E600FE4DEF /* ATTinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTinderViewController.m; sourceTree = "<group>"; };
+		8A1FA5391B10074100FE4DEF /* MDCGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCGeometry.h; sourceTree = "<group>"; };
+		8A1FA53A1B10074100FE4DEF /* MDCGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCGeometry.m; sourceTree = "<group>"; };
+		8A1FA53C1B10074100FE4DEF /* MDCViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCViewState.h; sourceTree = "<group>"; };
+		8A1FA53D1B10074100FE4DEF /* MDCViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCViewState.m; sourceTree = "<group>"; };
+		8A1FA53E1B10074100FE4DEF /* UIColor+MDCRGB8Bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MDCRGB8Bit.h"; sourceTree = "<group>"; };
+		8A1FA53F1B10074100FE4DEF /* UIColor+MDCRGB8Bit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MDCRGB8Bit.m"; sourceTree = "<group>"; };
+		8A1FA5411B10074100FE4DEF /* UIView+MDCBorderedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDCBorderedLabel.h"; sourceTree = "<group>"; };
+		8A1FA5421B10074100FE4DEF /* UIView+MDCBorderedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDCBorderedLabel.m"; sourceTree = "<group>"; };
+		8A1FA5431B10074100FE4DEF /* MDCSwipeToChoose-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MDCSwipeToChoose-Prefix.pch"; sourceTree = "<group>"; };
+		8A1FA5451B10074100FE4DEF /* MDCSwipeToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeToChoose.h; sourceTree = "<group>"; };
+		8A1FA5471B10074100FE4DEF /* MDCSwipeOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeOptions.h; sourceTree = "<group>"; };
+		8A1FA5481B10074100FE4DEF /* MDCSwipeOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCSwipeOptions.m; sourceTree = "<group>"; };
+		8A1FA5491B10074100FE4DEF /* MDCSwipeToChooseViewOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeToChooseViewOptions.h; sourceTree = "<group>"; };
+		8A1FA54A1B10074100FE4DEF /* MDCSwipeToChooseViewOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCSwipeToChooseViewOptions.m; sourceTree = "<group>"; };
+		8A1FA54C1B10074100FE4DEF /* MDCPanState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCPanState.h; sourceTree = "<group>"; };
+		8A1FA54D1B10074100FE4DEF /* MDCPanState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCPanState.m; sourceTree = "<group>"; };
+		8A1FA54E1B10074100FE4DEF /* MDCSwipeDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeDirection.h; sourceTree = "<group>"; };
+		8A1FA54F1B10074100FE4DEF /* MDCSwipeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeResult.h; sourceTree = "<group>"; };
+		8A1FA5501B10074100FE4DEF /* MDCSwipeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCSwipeResult.m; sourceTree = "<group>"; };
+		8A1FA5521B10074100FE4DEF /* MDCSwipeToChooseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeToChooseDelegate.h; sourceTree = "<group>"; };
+		8A1FA5531B10074100FE4DEF /* MDCSwipeToChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCSwipeToChooseView.h; sourceTree = "<group>"; };
+		8A1FA5541B10074100FE4DEF /* MDCSwipeToChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCSwipeToChooseView.m; sourceTree = "<group>"; };
+		8A1FA5551B10074100FE4DEF /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
+		8A1FA5561B10074100FE4DEF /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
+		8A1FA5611B10082300FE4DEF /* ATTinderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTinderViewController.xib; sourceTree = "<group>"; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -247,6 +286,7 @@
 		8A1FA4111B0F754300FE4DEF /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FA5371B10074100FE4DEF /* MDCSwipeToChoose */,
 				8A1FA5011B0F92F700FE4DEF /* parse-ios-sdk */,
 				8A1FA47D1B0F776200FE4DEF /* Mantle */,
 				8A1FA4A21B0F776200FE4DEF /* MBProgressHUD */,
@@ -390,6 +430,9 @@
 				8A1FA4F61B0F848F00FE4DEF /* ATAnimalListViewController.m */,
 				8A1FA4FE1B0F8E0400FE4DEF /* ATAnimalDetailViewController.h */,
 				8A1FA4FF1B0F8E0400FE4DEF /* ATAnimalDetailViewController.m */,
+				8A1FA5341B1006E600FE4DEF /* ATTinderViewController.h */,
+				8A1FA5351B1006E600FE4DEF /* ATTinderViewController.m */,
+				8A1FA5611B10082300FE4DEF /* ATTinderViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -435,6 +478,93 @@
 				8A1FA50E1B0F930E00FE4DEF /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1FA5371B10074100FE4DEF /* MDCSwipeToChoose */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5381B10074100FE4DEF /* Internal */,
+				8A1FA5431B10074100FE4DEF /* MDCSwipeToChoose-Prefix.pch */,
+				8A1FA5441B10074100FE4DEF /* Public */,
+			);
+			path = MDCSwipeToChoose;
+			sourceTree = "<group>";
+		};
+		8A1FA5381B10074100FE4DEF /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5391B10074100FE4DEF /* MDCGeometry.h */,
+				8A1FA53A1B10074100FE4DEF /* MDCGeometry.m */,
+				8A1FA53B1B10074100FE4DEF /* State */,
+				8A1FA53E1B10074100FE4DEF /* UIColor+MDCRGB8Bit.h */,
+				8A1FA53F1B10074100FE4DEF /* UIColor+MDCRGB8Bit.m */,
+				8A1FA5401B10074100FE4DEF /* Views */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		8A1FA53B1B10074100FE4DEF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA53C1B10074100FE4DEF /* MDCViewState.h */,
+				8A1FA53D1B10074100FE4DEF /* MDCViewState.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		8A1FA5401B10074100FE4DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5411B10074100FE4DEF /* UIView+MDCBorderedLabel.h */,
+				8A1FA5421B10074100FE4DEF /* UIView+MDCBorderedLabel.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A1FA5441B10074100FE4DEF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5451B10074100FE4DEF /* MDCSwipeToChoose.h */,
+				8A1FA5461B10074100FE4DEF /* Options */,
+				8A1FA54B1B10074100FE4DEF /* State */,
+				8A1FA5511B10074100FE4DEF /* Views */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8A1FA5461B10074100FE4DEF /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5471B10074100FE4DEF /* MDCSwipeOptions.h */,
+				8A1FA5481B10074100FE4DEF /* MDCSwipeOptions.m */,
+				8A1FA5491B10074100FE4DEF /* MDCSwipeToChooseViewOptions.h */,
+				8A1FA54A1B10074100FE4DEF /* MDCSwipeToChooseViewOptions.m */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		8A1FA54B1B10074100FE4DEF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA54C1B10074100FE4DEF /* MDCPanState.h */,
+				8A1FA54D1B10074100FE4DEF /* MDCPanState.m */,
+				8A1FA54E1B10074100FE4DEF /* MDCSwipeDirection.h */,
+				8A1FA54F1B10074100FE4DEF /* MDCSwipeResult.h */,
+				8A1FA5501B10074100FE4DEF /* MDCSwipeResult.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		8A1FA5511B10074100FE4DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FA5521B10074100FE4DEF /* MDCSwipeToChooseDelegate.h */,
+				8A1FA5531B10074100FE4DEF /* MDCSwipeToChooseView.h */,
+				8A1FA5541B10074100FE4DEF /* MDCSwipeToChooseView.m */,
+				8A1FA5551B10074100FE4DEF /* UIView+MDCSwipeToChoose.h */,
+				8A1FA5561B10074100FE4DEF /* UIView+MDCSwipeToChoose.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8AB29E691B0F666D0033FC2F = {
@@ -590,6 +720,7 @@
 				8A1FA5321B0F978500FE4DEF /* devConfig.json in Resources */,
 				8AB29E831B0F666D0033FC2F /* Images.xcassets in Resources */,
 				8A1FA4F01B0F79FE00FE4DEF /* data.json in Resources */,
+				8A1FA5621B10082300FE4DEF /* ATTinderViewController.xib in Resources */,
 				8A1FA5331B0F978500FE4DEF /* ProConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +744,7 @@
 				8A1FA5001B0F8E0400FE4DEF /* ATAnimalDetailViewController.m in Sources */,
 				8A1FA4DF1B0F776200FE4DEF /* SDWebImageManager.m in Sources */,
 				8A1FA4DB1B0F776200FE4DEF /* SDWebImageCompat.m in Sources */,
+				8A1FA55A1B10074100FE4DEF /* UIView+MDCBorderedLabel.m in Sources */,
 				8A1FA4E01B0F776200FE4DEF /* SDWebImagePrefetcher.m in Sources */,
 				8A1FA4CF1B0F776200FE4DEF /* NSArray+MTLManipulationAdditions.m in Sources */,
 				8A1FA4DA1B0F776200FE4DEF /* SDImageCache.m in Sources */,
@@ -622,11 +754,16 @@
 				8A1FA4CC1B0F776200FE4DEF /* MTLReflection.m in Sources */,
 				8A1FA4E41B0F776200FE4DEF /* UIImage+WebP.m in Sources */,
 				8A1FA4F31B0F7A5200FE4DEF /* ATAnimal.m in Sources */,
+				8A1FA55C1B10074100FE4DEF /* MDCSwipeToChooseViewOptions.m in Sources */,
 				8A1FA4CB1B0F776200FE4DEF /* MTLModel.m in Sources */,
 				8A1FA4ED1B0F78F000FE4DEF /* NSDictionary+JSON.m in Sources */,
 				8A1FA4D71B0F776200FE4DEF /* MBProgressHUD.m in Sources */,
+				8A1FA55D1B10074100FE4DEF /* MDCPanState.m in Sources */,
 				8A1FA4FC1B0F851F00FE4DEF /* ATAnimalViewCell.m in Sources */,
+				8A1FA5571B10074100FE4DEF /* MDCGeometry.m in Sources */,
+				8A1FA55E1B10074100FE4DEF /* MDCSwipeResult.m in Sources */,
 				8A1FA4E21B0F776200FE4DEF /* UIImage+GIF.m in Sources */,
+				8A1FA5601B10074100FE4DEF /* UIView+MDCSwipeToChoose.m in Sources */,
 				8A1FA4E71B0F776200FE4DEF /* UIView+WebCacheOperation.m in Sources */,
 				8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */,
 				8A1FA4C71B0F776200FE4DEF /* EXTRuntimeExtensions.m in Sources */,
@@ -636,8 +773,10 @@
 				8A1FA4D91B0F776200FE4DEF /* NSData+ImageContentType.m in Sources */,
 				8A1FA4D31B0F776200FE4DEF /* NSError+MTLModelException.m in Sources */,
 				8A1FA4DE1B0F776200FE4DEF /* SDWebImageDownloaderOperation.m in Sources */,
+				8A1FA55B1B10074100FE4DEF /* MDCSwipeOptions.m in Sources */,
 				8A1FA4D81B0F776200FE4DEF /* MKAnnotationView+WebCache.m in Sources */,
 				8A1FA4D61B0F776200FE4DEF /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+				8A1FA5361B1006E600FE4DEF /* ATTinderViewController.m in Sources */,
 				8A1FA4D11B0F776200FE4DEF /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				8A1FA4D21B0F776200FE4DEF /* NSDictionary+MTLMappingAdditions.m in Sources */,
 				8A1FA4D51B0F776200FE4DEF /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
@@ -645,10 +784,13 @@
 				8A1FA4D41B0F776200FE4DEF /* NSObject+MTLComparisonAdditions.m in Sources */,
 				8AB29E781B0F666D0033FC2F /* main.m in Sources */,
 				8A1FA4CE1B0F776200FE4DEF /* MTLValueTransformer.m in Sources */,
+				8A1FA5591B10074100FE4DEF /* UIColor+MDCRGB8Bit.m in Sources */,
 				8A1FA4E61B0F776200FE4DEF /* UIImageView+WebCache.m in Sources */,
 				8A1FA4CD1B0F776200FE4DEF /* MTLTransformerErrorHandling.m in Sources */,
+				8A1FA5581B10074100FE4DEF /* MDCViewState.m in Sources */,
 				8A1FA52B1B0F956800FE4DEF /* ATParse.m in Sources */,
 				8A1FA4D01B0F776200FE4DEF /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				8A1FA55F1B10074100FE4DEF /* MDCSwipeToChooseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

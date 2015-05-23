@@ -12,6 +12,8 @@
 #import "ATAnimal.h"
 #import "UIImageView+WebCache.h"
 #import "ATAnimalDetailViewController.h"
+#import "ATTinderViewController.h"
+
 
 @interface ATAnimalListViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) NSArray *animals;
@@ -98,5 +100,13 @@ static NSString * const kATAnimalViewCell = @"ATAnimalViewCell";
         mvc.animal = sender;
     }
 }
+
+#pragma mark - IBActions
+- (IBAction)openSwipeVC:(id)sender
+{
+    ATTinderViewController *mvc = [[ATTinderViewController alloc] init];
+    [self.navigationController pushViewController:mvc animated:YES];
+}
+
 
 @end

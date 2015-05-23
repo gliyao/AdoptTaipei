@@ -58,7 +58,13 @@
                             <constraint firstItem="DbU-n8-kf4" firstAttribute="top" secondItem="Sp0-U7-dGW" secondAttribute="bottom" id="pqj-nK-yhE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="尋找幸福" id="TOG-Xc-Ba7"/>
+                    <navigationItem key="navigationItem" title="尋找幸福" id="TOG-Xc-Ba7">
+                        <barButtonItem key="rightBarButtonItem" title="Tinder" id="gfm-p2-5Xx">
+                            <connections>
+                                <action selector="openSwipeVC:" destination="cXf-FZ-vac" id="y1u-jF-23V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Sp0-U7-dGW" id="Qz3-Tx-0tF"/>
                         <segue destination="t9r-gM-WYv" kind="show" identifier="openDetailVC" id="yEA-kR-oV1"/>
