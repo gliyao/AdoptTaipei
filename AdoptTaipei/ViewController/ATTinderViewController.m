@@ -9,9 +9,18 @@
 #import "ATTinderViewController.h"
 #import "MDCSwipeToChoose.h"
 #import "ATAnimal.h"
+#import "UIImage+WebP.h"
+#import "UIImageView+WebCache.h"
+
+static CGFloat const kPadding = 8;
+static CGFloat const k2Padding = 16;
+static CGFloat const kNaviBarHeight = 64;
 
 @interface ATTinderViewController () <MDCSwipeToChooseDelegate>
-
+@property (strong, nonatomic) MDCSwipeToChooseView *cardView;
+@property (assign, nonatomic) CGRect cardFrame;
+@property (weak, nonatomic) IBOutlet UIView *topView;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 @end
 
 @implementation ATTinderViewController
@@ -40,12 +49,25 @@
     [super loadView];
     
     self.title = @"Tinder";
+    CGRect screenBounds = [UIScreen mainScreen].bounds;
+    self.cardFrame = CGRectMake(kPadding, kNaviBarHeight + kPadding, CGRectGetWidth(screenBounds) - k2Padding, CGRectGetWidth(screenBounds) - k2Padding);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self _nextCard];
+}
+
+- (void)_nextCard
+{
+    int r = arc4random_uniform((int)self.animals.count);
+    ATAnimal *animal = self.animals[r];
+    [self _newCardWithAnimal:animal];
+}
+
+- (void)_newCardWithAnimal:(ATAnimal *)animal
+{
     // You can customize MDCSwipeToChooseView using MDCSwipeToChooseViewOptions.
     MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
     options.delegate = self;
@@ -53,15 +75,14 @@
     options.likedColor = [UIColor blueColor];
     options.nopeText = @"Delete";
     options.onPan = ^(MDCPanState *state){
-        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionLeft) {
-            NSLog(@"Let go now to delete the photo!");
-        }
+//        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionLeft) {
+//            NSLog(@"Let go now to delete the photo!");
+//        }
     };
     
-    MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.view.bounds
-                                                                     options:options];
-    view.imageView.image = [UIImage imageNamed:@"photo"];
-    [self.view addSubview:view];
+    self.cardView = [[MDCSwipeToChooseView alloc] initWithFrame:self.cardFrame options:options];
+    [self.cardView.imageView sd_setImageWithURL:[NSURL URLWithString:animal.imageUrl]];
+    [self.view addSubview:self.cardView];
 }
 
 #pragma mark - <MDCSwipeToChooseDelegate>
@@ -74,16 +95,7 @@
 // Sent before a choice is made. Cancel the choice by returning `NO`. Otherwise return `YES`.
 - (BOOL)view:(UIView *)view shouldBeChosenWithDirection:(MDCSwipeDirection)direction
 {
-    if (direction == MDCSwipeDirectionLeft) {
-        return YES;
-    } else {
-        // Snap the view back and cancel the choice.
-        [UIView animateWithDuration:0.16 animations:^{
-            view.transform = CGAffineTransformIdentity;
-            view.center = [view superview].center;
-        }];
-        return NO;
-    }
+    return YES;
 }
 
 // This is called then a user swipes the view fully left or right.
@@ -94,5 +106,18 @@
     } else {
         NSLog(@"Photo saved!");
     }
+    [self _nextCard];
 }
+
+#pragma mark - IBAtions
+- (IBAction)yesAction:(id)sender
+{
+    [self.cardView mdc_swipe:MDCSwipeDirectionRight];
+}
+
+- (IBAction)noAction:(id)sender
+{
+    [self.cardView mdc_swipe:MDCSwipeDirectionLeft];
+}
+
 @end

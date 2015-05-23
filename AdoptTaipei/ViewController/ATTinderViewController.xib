@@ -2,18 +2,75 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATTinderViewController">
             <connections>
+                <outlet property="bottomView" destination="DZ0-zI-hIO" id="RWu-ye-Iq5"/>
+                <outlet property="topView" destination="wU4-kW-zC6" id="rhY-nX-vKf"/>
                 <outlet property="view" destination="PpR-Tx-V4s" id="W76-5f-87x"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="PpR-Tx-V4s">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="831"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wU4-kW-zC6" userLabel="topView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wU4-kW-zC6" secondAttribute="height" multiplier="1:1" id="c4V-pN-ZhV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-zI-hIO" userLabel="bottomView">
+                    <rect key="frame" x="0.0" y="600" width="600" height="231"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT4-Z6-NAn">
+                            <rect key="frame" x="300" y="0.0" width="300" height="231"/>
+                            <state key="normal" title="YES">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="yesAction:" destination="-1" eventType="touchUpInside" id="KNd-zS-Z9T"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-vl-09D">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="231"/>
+                            <state key="normal" title="NO">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="noAction:" destination="-1" eventType="touchUpInside" id="xfj-qT-JBd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="OT4-Z6-NAn" firstAttribute="top" secondItem="DZ0-zI-hIO" secondAttribute="top" id="DFM-s7-Ddc"/>
+                        <constraint firstItem="8dR-vl-09D" firstAttribute="top" secondItem="DZ0-zI-hIO" secondAttribute="top" id="L3m-ET-70R"/>
+                        <constraint firstItem="8dR-vl-09D" firstAttribute="width" secondItem="OT4-Z6-NAn" secondAttribute="width" id="ShT-ZV-19p"/>
+                        <constraint firstItem="OT4-Z6-NAn" firstAttribute="leading" secondItem="8dR-vl-09D" secondAttribute="trailing" id="hN8-y1-WB2"/>
+                        <constraint firstItem="8dR-vl-09D" firstAttribute="leading" secondItem="DZ0-zI-hIO" secondAttribute="leading" id="i0o-JT-f9A"/>
+                        <constraint firstAttribute="trailing" secondItem="OT4-Z6-NAn" secondAttribute="trailing" id="nZL-5q-tDd"/>
+                        <constraint firstAttribute="bottom" secondItem="8dR-vl-09D" secondAttribute="bottom" id="sOk-dU-abe"/>
+                        <constraint firstAttribute="bottom" secondItem="OT4-Z6-NAn" secondAttribute="bottom" id="wl3-d2-iJr"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DZ0-zI-hIO" secondAttribute="bottom" id="3S3-2e-1ls"/>
+                <constraint firstItem="DZ0-zI-hIO" firstAttribute="top" secondItem="wU4-kW-zC6" secondAttribute="bottom" id="PAO-xQ-70x"/>
+                <constraint firstItem="wU4-kW-zC6" firstAttribute="leading" secondItem="PpR-Tx-V4s" secondAttribute="leading" id="Qe5-Ap-0ak"/>
+                <constraint firstItem="wU4-kW-zC6" firstAttribute="top" secondItem="PpR-Tx-V4s" secondAttribute="top" id="Rgl-og-qZm"/>
+                <constraint firstAttribute="trailing" secondItem="DZ0-zI-hIO" secondAttribute="trailing" id="sjO-a7-dyH"/>
+                <constraint firstAttribute="trailing" secondItem="wU4-kW-zC6" secondAttribute="trailing" id="wPN-SZ-Ssr"/>
+                <constraint firstItem="DZ0-zI-hIO" firstAttribute="leading" secondItem="PpR-Tx-V4s" secondAttribute="leading" id="xbN-Wb-si3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="620" y="508.5"/>
         </view>
     </objects>
 </document>
