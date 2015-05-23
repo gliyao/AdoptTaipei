@@ -95,6 +95,7 @@
     
     self.adoptButton.clipsToBounds = YES;
     self.adoptButton.layer.cornerRadius = 4;
+    self.adoptButton.backgroundColor = [UIColor colorWithRed:255/255 green:49/255 blue:70/255 alpha:0.79];
 }
 
 - (void)_setupCardView:(UIView *)view
