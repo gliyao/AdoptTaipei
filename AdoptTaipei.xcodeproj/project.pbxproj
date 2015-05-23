@@ -81,6 +81,7 @@
 		8A1FA55F1B10074100FE4DEF /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5541B10074100FE4DEF /* MDCSwipeToChooseView.m */; };
 		8A1FA5601B10074100FE4DEF /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5561B10074100FE4DEF /* UIView+MDCSwipeToChoose.m */; };
 		8A1FA5621B10082300FE4DEF /* ATTinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FA5611B10082300FE4DEF /* ATTinderViewController.xib */; };
+		8A1FA5651B10225F00FE4DEF /* ATLike.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FA5641B10225F00FE4DEF /* ATLike.m */; };
 		8AB29E781B0F666D0033FC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E771B0F666D0033FC2F /* main.m */; };
 		8AB29E7B1B0F666D0033FC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29E7A1B0F666D0033FC2F /* AppDelegate.m */; };
 		8AB29E811B0F666D0033FC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB29E7F1B0F666D0033FC2F /* Main.storyboard */; };
@@ -233,6 +234,8 @@
 		8A1FA5551B10074100FE4DEF /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
 		8A1FA5561B10074100FE4DEF /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
 		8A1FA5611B10082300FE4DEF /* ATTinderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATTinderViewController.xib; sourceTree = "<group>"; };
+		8A1FA5631B10225F00FE4DEF /* ATLike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLike.h; sourceTree = "<group>"; };
+		8A1FA5641B10225F00FE4DEF /* ATLike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLike.m; sourceTree = "<group>"; };
 		8AB29E721B0F666D0033FC2F /* AdoptTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB29E761B0F666D0033FC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB29E771B0F666D0033FC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -419,6 +422,8 @@
 				8A1FA4F21B0F7A5200FE4DEF /* ATAnimal.m */,
 				8A1FA5291B0F956800FE4DEF /* ATParse.h */,
 				8A1FA52A1B0F956800FE4DEF /* ATParse.m */,
+				8A1FA5631B10225F00FE4DEF /* ATLike.h */,
+				8A1FA5641B10225F00FE4DEF /* ATLike.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -748,6 +753,7 @@
 				8A1FA4E01B0F776200FE4DEF /* SDWebImagePrefetcher.m in Sources */,
 				8A1FA4CF1B0F776200FE4DEF /* NSArray+MTLManipulationAdditions.m in Sources */,
 				8A1FA4DA1B0F776200FE4DEF /* SDImageCache.m in Sources */,
+				8A1FA5651B10225F00FE4DEF /* ATLike.m in Sources */,
 				8A1FA4C91B0F776200FE4DEF /* MTLJSONAdapter.m in Sources */,
 				8A1FA4E11B0F776200FE4DEF /* UIButton+WebCache.m in Sources */,
 				8A1FA4CA1B0F776200FE4DEF /* MTLModel+NSCoding.m in Sources */,

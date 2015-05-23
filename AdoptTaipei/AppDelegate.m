@@ -20,6 +20,12 @@ static NSString * const kProConfig = @"proConfig";
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
 #ifdef DEBUG
     NSString *configFile = kDevConfig;
 #else
@@ -38,16 +44,51 @@ static NSString * const kProConfig = @"proConfig";
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    if([PFUser currentUser] == nil){
+        [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
+            if (error) {
+                NSLog(@"Anonymous login failed.");
+            } else {
+                NSLog(@"Anonymous user logged in.");
+                [self _registAPNS];
+            }
+        }];
+    }
+    else{
+        [self _registAPNS];
+    }
+    
+    
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)_registAPNS
 {
+    UIApplication *application = [UIApplication sharedApplication];
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+}
 
-    if([PFUser currentUser] == nil){
-        [PFAnonymousUtils logInInBackground];
-    }
-    return YES;
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    currentInstallation.channels = @[ @"global" ];
+    [currentInstallation setObject:[PFUser currentUser].objectId forKey:@"userId"];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [PFPush handlePush:userInfo];
 }
 
 
