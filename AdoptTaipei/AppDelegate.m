@@ -15,13 +15,20 @@ static NSString * const kProConfig = @"proConfig";
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) UINavigationController *rootViewController;
+
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
 
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.rootViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
