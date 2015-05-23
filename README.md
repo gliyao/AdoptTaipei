@@ -1,13 +1,11 @@
 #尋找幸福 AdoptTaipei
 
-第一屆臺北市政府開放資料黑客松 
+##第一屆臺北市政府開放資料黑客松
+- 官網：http://data.taipei
 - Keynote：https://goo.gl/3QmMXW
 - GitHub：https://goo.gl/Nzf8aO
 - Youtube：https://www.youtube.com/watch?v=r4o0y5qzEf0
-
-##認養動物 f4a75ba9-7721-4363-884d-c3820b0b917c
-http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
-&rid=f4a75ba9-7721-4363-884d-c3820b0b917c
+- Data：認養動物API - http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f4a75ba9-7721-4363-884d-c3820b0b917c
 
 
 ## 收容
@@ -15,7 +13,8 @@ http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
 - 棄養送過去
 - 撿到
 
-## 撲殺原則 - 一個籠子 3-5, 籠子滿了就會排安樂
+## 撲殺原則
+一個籠子 3-5, 籠子滿了就會排安樂
 - 有攻擊性
 - 沒辦法治癒的病(10%)會傳染給別的狗
 - 太久沒被領養的
@@ -58,5 +57,5 @@ User {
 
 ## 其他
 * 領養須知 - 在要領養動物的動作之前, 自我評估 http://animal-adoption.coa.gov.tw/estimate
-* 電話認證註冊 - 或Fb login
-* 領養系統改進
+* 電話認證註冊 - 防假帳號
+* 領養系統改進 - 限制每個帳號猜與領養的數量，線上抽籤通知。
