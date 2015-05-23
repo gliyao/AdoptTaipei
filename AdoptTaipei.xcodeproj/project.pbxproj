@@ -918,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/parse-ios-sdk",
@@ -928,6 +929,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/Mantle";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b8633d22-d0ff-478f-82d4-04e157e0f3aa";
 			};
 			name = Debug;
 		};
@@ -935,6 +937,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/parse-ios-sdk",
@@ -945,6 +948,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/Mantle";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b8633d22-d0ff-478f-82d4-04e157e0f3aa";
 			};
 			name = Release;
 		};
