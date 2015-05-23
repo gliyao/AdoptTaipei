@@ -8,6 +8,8 @@
 
 #import <Parse/Parse.h>
 
-@interface ATLike : PFObject
-
+@interface ATLike : PFObject<PFSubclassing>
++ (NSString *)parseClassName;
+@property (retain) NSString *userId;
+@property (retain) NSString *animalId;
 @end

@@ -9,5 +9,12 @@
 #import "ATLike.h"
 
 @implementation ATLike
+@dynamic userId;
+@dynamic animalId;
+
++ (NSString *)parseClassName
+{
+    return NSStringFromClass([self class]);
+}
 
 @end
