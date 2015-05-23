@@ -1,9 +1,9 @@
 #尋找幸福 AdoptTaipei
 
 第一屆臺北市政府開放資料黑客松 
-Keynote：https://goo.gl/3QmMXW
-GitHub：https://goo.gl/Nzf8aO
-Youtube：https://www.youtube.com/watch?v=r4o0y5qzEf0
+- Keynote：https://goo.gl/3QmMXW
+- GitHub：https://goo.gl/Nzf8aO
+- Youtube：https://www.youtube.com/watch?v=r4o0y5qzEf0
 
 ##認養動物 f4a75ba9-7721-4363-884d-c3820b0b917c
 http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
@@ -20,16 +20,10 @@ http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
 - 沒辦法治癒的病(10%)會傳染給別的狗
 - 太久沒被領養的
 
-成犬區/ 幼犬
-
-提供民眾捐款
-	狗媽媽 - 私營
-
 ## 目前領養流程
 1. 公布寵物領養日期
 2. 時間內排隊簽到
 3. 簽到的人數抽一位
-
 
 ## Issue
 1. 惡意的領養者 - 有的人會領養後又棄養, 一個身分證可以認養20支狗, 追蹤認養的人, 看是不是好人
@@ -47,7 +41,6 @@ http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
 	領養number
 }
 動態 - 領養日期預告, 被領養了
-
 
 User {
 	已領養動物[],
