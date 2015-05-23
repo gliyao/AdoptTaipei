@@ -1,5 +1,10 @@
 #尋找幸福 AdoptTaipei
 
+第一屆臺北市政府開放資料黑客松 
+Keynote：https://goo.gl/3QmMXW
+GitHub：https://goo.gl/Nzf8aO
+Youtube：https://www.youtube.com/watch?v=r4o0y5qzEf0
+
 ##認養動物 f4a75ba9-7721-4363-884d-c3820b0b917c
 http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire
 &rid=f4a75ba9-7721-4363-884d-c3820b0b917c
