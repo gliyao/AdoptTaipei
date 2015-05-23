@@ -10,6 +10,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dh2-Zq-v5o" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mQ2-1R-Mun">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -66,6 +67,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="collectionView" destination="Sp0-U7-dGW" id="Qz3-Tx-0tF"/>
                         <segue destination="5t3-jw-SOt" kind="show" identifier="openDetailVC" id="Npb-Yh-0Q6"/>
@@ -918,6 +920,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="2000"/>
                     <connections>
